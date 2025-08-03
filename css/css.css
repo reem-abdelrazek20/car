@@ -1,0 +1,152 @@
+/* =======================
+   Theme Color Variables
+   ======================= */
+   :root {
+    --color-background: #f4f4f4;
+    --color-card-bg: #ffffff;
+    --color-primary: #1f3a93;     /* رئيسي (للعناوين) */
+    --color-secondary: #4b6043;   /* ثانوي (عناوين فرعية) */
+    --color-accent: #e67e22;      /* زر أساسي */
+    --color-accent-hover: #cf711c; /* هوفر الزر */
+    --color-text-main: #333333; 
+    --color-text-muted: #666666;
+    --color-icon: #4b6043;
+    --color-border: #ddd;
+  }
+  
+  /* =======================
+     Global Reset
+     ======================= */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  /* =======================
+     Headings
+     ======================= */
+  h1, h2 {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  
+  h3 {
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+  
+  /* =======================
+     Text & Paragraphs
+     ======================= */
+  p, span, li {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+  }
+  
+  /* =======================
+     Links
+     ======================= */
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-accent);
+  }
+  
+  /* =======================
+     Buttons
+     ======================= */
+  button,
+  .btn-primary,
+  .cta-btn {
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover,
+  .btn-primary:hover,
+  .cta-btn:hover {
+    background-color: var(--color-accent-hover);
+  }
+  
+  /* =======================
+     Cards & Boxes
+     ======================= */
+  .card,
+  .bg-box {
+    background-color: var(--color-card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  
+  /* =======================
+     Icons
+     ======================= */
+  i, svg {
+    color: var(--color-icon);
+  }
+  
+  /* =======================
+     Borders
+     ======================= */
+  hr, .border {
+    border-color: var(--color-border);
+  }
+  
+  /* =======================
+     Forms (Optional Styling)
+     ======================= */
+  input,
+  textarea,
+  select {
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+  }
+  
+  /* =======================
+     Hero Section
+     ======================= */
+  .hero h1 {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero p {
+    color: #f0f0f0;
+  }
+  
+  .hero a.cta-btn {
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  .hero a.cta-btn:hover {
+    background-color: var(--color-accent-hover);
+  }
+  

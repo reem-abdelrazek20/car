@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحة هبوط أكاديمية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+ 
+<!-- الهيدر -->
+
+
+<header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+  <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+    
+    <!-- الشعار -->
+    <a class="block text-teal-600" href="#">
+      <span class="sr-only">Home</span>
+      <img src="/img/logo.png" alt="شعار الموقع" class="w-14 h-14">
+    </a>
+
+    <!-- الروابط -->
+    <div class="flex flex-1 items-center justify-end md:justify-between">
+      <nav aria-label="Global" class="hidden md:block">
+        <ul class="flex items-center gap-6 text-sm font-semibold ">
+          <li><a href="#about" class="hover:text-teal-600 transition">من نحن</a></li>
+          <li><a href="#services" class="hover:text-teal-600 transition">خدماتنا</a></li>
+          <li><a href="#faq" class="hover:text-teal-600 transition">الأسئلة الشائعة</a></li>
+          <li><a href="#contact" class="hover:text-teal-600 transition">تواصل معنا</a></li>
+          <li><a href="#locations" class="hover:text-teal-600 transition">أين نعمل</a></li>
+        </ul>
+      </nav>
+
+      <!-- الأزرار -->
+      <div class="flex items-center gap-3">
+        
+        <!-- زر ابدأ الآن -->
+        <a href="#contact"
+          class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700">
+          ابدأ الآن
+        </a>
+
+        <!-- زر واتساب -->
+        <a href="https://wa.me/رقم_الواتساب" target="_blank" aria-label="تواصل عبر واتساب"
+          class="text-green-500 text-xl hover:text-green-600">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- زر موبايل (الهامبورجر) -->
+        <a id="mobile-menu-button"
+        class="block rounded-sm bg-white p-2.5 text-gray-600 transition hover:text-gray-700 md:hidden focus:outline-none">
+     
+          <span class="sr-only">Toggle menu</span>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- قائمة الموبايل (تظهر عند الضغط على الزر) -->
+  <nav id="mobile-menu" class="md:hidden hidden bg-white shadow">
+    <ul class="flex flex-col px-4 py-3 space-y-2 text-sm font-semibold text-gray-700">
+      <li><a href="#about" class="block hover:text-teal-600">من نحن</a></li>
+      <li><a href="#services" class="block hover:text-teal-600">خدماتنا</a></li>
+      <li><a href="#faq" class="block hover:text-teal-600">الأسئلة الشائعة</a></li>
+      <li><a href="#contact" class="block hover:text-teal-600">تواصل معنا</a></li>
+      <li><a href="#locations" class="block hover:text-teal-600">أين نعمل</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- hero section -->
+<section class="hero pt-[80px] pb-20">
+  <div class="container mx-auto px-4">
+    <!-- صورة خلفية داخل الكونتينر -->
+    <div class="relative overflow-hidden min-h-[400px] rounded-xl shadow-lg">
+      <img src="/img/home.jpg" alt="Hero Image"
+        class="w-full h-full object-cover absolute inset-0 z-0" />
+      
+      <!-- طبقة شفافة فوق الصورة -->
+      <div class="absolute inset-0 bg-black/60 z-0"></div>
+
+      <!-- المحتوى فوق الصورة -->
+      <div class="relative z-10 text-white text-center py-20 px-6">
+        <h1 class="text-3xl sm:text-5xl font-bold mb-6 leading-relaxed drop-shadow-lg">
+          استورد سيارتك من أمريكا بسهولة وأمان  
+        </h1>
+        <p class="text-lg sm:text-xl leading-loose mb-6 drop-shadow-md">
+          بوابتك الموثوقة لشراء وتصدير السيارات والمعدات من أمريكا إلى العالم.<br>
+          نخدم عملاءنا في جميع الدول عبر شبكة شحن دولية وشركاء موثوقين.
+        </p>
+        <p class="text-base sm:text-lg drop-shadow-sm font-semibold italic mb-6">
+          Platinum Global Motors – من أمريكا إلى العالم
+        </p>
+
+        <!-- زر CTA -->
+        <a href="#contact"
+          class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-xl shadow-md transition duration-300">
+          ابدأ الآن
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="aboutUs py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row-reverse items-center gap-10">
+    
+    <!-- صورة -->
+    <div class="w-full md:w-1/2">
+      <img 
+        src="/img/about.png" 
+        alt="من نحن" 
+        class="w-full rounded-2xl shadow-xl transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+
+    <!-- نص -->
+    <div class="w-full md:w-1/2 text-right">
+      <h2 class="text-4xl font-bold text-[#836FFF] mb-6">من نحن</h2>
+
+    
+
+      <p class="text-gray-700 leading-loose text-lg mb-6">
+        شركة أمريكية مسجلة ومرخصة ومعتمدة رسميًا، مقرها ولاية تينيسي – الولايات المتحدة الأمريكية، ومتخصصة في تصدير المركبات، الآلات، وقطع الغيار من أمريكا إلى الأسواق العالمية.
+      </p>
+
+      <a href="#"
+         class="inline-flex items-center gap-2 font-semibold text-lg text-[#836FFF] hover:underline transition">
+        اقرأ المزيد
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="bg-gray-100 w-full">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 h-full min-h-[500px]">
+    
+    <!-- الصورة على اليسار -->
+    <div class="w-full h-full">
+      <img src="/img/img.jpg" alt="خدماتنا" 
+        class="w-full h-full object-cover rounded-r-2xl" />
+    </div>
+
+    <!-- النص على اليمين -->
+    <div class="flex flex-col justify-center px-6 py-12 text-right">
+      <h2 class="text-4xl font-bold text-[#836FFF] mb-4">خدماتنا</h2>
+
+      <p class="text-lg font-semibold text-gray-800 mb-6">
+        Platinum Global Motors – امتداد عالمي من أمريكا إلى العالم.
+      </p>
+
+      <ul class="space-y-4 text-gray-700 leading-loose text-lg list-disc list-inside pr-2 marker:text-blue-500">
+        <li>
+          نوفر لك شراء السيارات من جميع المزادات الأمريكية المعتمدة بأسعار تنافسية، عبر شبكة مزادات موثوقة تتيح خيارات واسعة وأسعار مناسبة.
+        </li>
+        <li>النقل الداخلي من المزاد إلى المستودع.</li>
+        <li>
+          نقدم خدمة التخزين المؤقت قبل الشحن، مع خيار الشحن المشترك (LCL) أو الحاوية الكاملة (FCL).
+        </li>
+        <li>
+          الشحن الدولي من موانئ: ميامي – نيويورك – هيوستن – شيكاغو – سافانا – كاليفورنيا.
+        </li>
+        <li>
+          تجهيز كافة مستندات التصدير: Title – Bill of Lading – Invoice.
+        </li>
+        <li>
+          نساعدك في شراء وتصدير الآلات والمعدات وقطع الغيار حسب متطلباتك الخاصة.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  
+
+<section class="py-16 text-center bg-white">
+  <h1 class="text-3xl md:text-4xl font-bold mb-6">لماذا <span class="text-[#836FFF]">Platinum Global Motors</span></h1>
+  
+  <p class="pb-4 text-lg text-gray-700">
+    <span class="text-[#836FFF] font-semibold">Platinum Global Motors</span> – امتداد عالمي من أمريكا إلى العالم.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-16 mt-10">
+    
+    <!-- كرت 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
+      <img src="/img/price2.png" alt="أسعار" class="h-32 mx-auto mb-4 object-contain">
+      <h2 class="text-xl font-semibold mb-2">أسعار تنافسية واضحة دون رسوم خفية</h2>
+      <p class="text-gray-600">نحن نؤمن بالشفافية الكاملة في التسعير دون مفاجآت.</p>
+    </div>
+
+    <!-- كرت 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
+      <img src="/img/img3.png" alt="صفقات" class="h-32 mx-auto mb-4 object-contain">
+      <h2 class="text-xl font-semibold mb-2">خبرة واسعة تضمن أفضل الصفقات</h2>
+      <p class="text-gray-600">نمتلك خبرة قوية في المزادات الأمريكية للحصول على أفضل المركبات بأفضل سعر.</p>
+    </div>
+
+    <!-- كرت 3 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
+      <img src="/img/time.png" alt="سرعة التنفيذ" class="h-32 mx-auto mb-4 object-contain">
+      <h2 class="text-xl font-semibold mb-2">سرعة في التنفيذ من الشراء حتى الإرسال</h2>
+      <p class="text-gray-600">نحرص على تنفيذ العمليات بسرعة وكفاءة لضمان رضاك.</p>
+    </div>
+
+    <!-- كرت 4 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
+      <img src="/img/fll.png" alt="متابعة الشحن" class="h-32 mx-auto mb-4 object-contain">
+      <h2 class="text-xl font-semibold mb-2">متابعة دقيقة لكل شحنة حتى التسليم</h2>
+      <p class="text-gray-600">نوفر تحديثات مستمرة عن حالة الشحنة من البداية حتى الوصول.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- قسم الأسئلة الشائعة -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 space-y-4">
+    <h2 class="text-3xl font-bold text-center text-[#836FFF] mb-8">الأسئلة الشائعة</h2>
+
+    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">هل يمكنني شراء أكثر من سيارة دفعة واحدة؟
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900">نعم، ونوفر لك شحنًا مجمعًا لتقليل التكاليف.
+      </p>
+    </details>
+    <details class="group [&_summary::-webkit-details-marker]:hidden" >
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">    هل أحتاج إلى رخصة مزاد أمريكية؟
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900"> لا، نشتري بالنيابة عنك عبر تراخيصنا المعتمدة.
+        .</p>
+    </details>
+    
+    <details class="group [&_summary::-webkit-details-marker]:hidden" >
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">هل يمكنني متابعة حالة السيارات؟
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900">  نعم، نوفر لك تحديثات دقيقة منذ الشراء وحتى الشحن.
+        .</p>
+    </details>
+    <details class="group [&_summary::-webkit-details-marker]:hidden" >
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">هل تتوفر خدمة فحص السيارات؟</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900">نعم، عند الطلب.</p>
+    </details>
+
+    <details class="group [&_summary::-webkit-details-marker]:hidden" >
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">هل يوجد تأمين على الشحن؟
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900">نعم، عند الطلب.</p>
+    </details>
+
+    <details class="group [&_summary::-webkit-details-marker]:hidden" >
+      <summary class="flex items-center justify-between gap-1.5 rounded-md border border-gray-200 bg-white p-4 text-gray-900">
+        <h2 class="text-lg font-medium">   ما هي مدة الشحن؟
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="block size-5 shrink-0 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden size-5 shrink-0 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </summary>
+      <p class="px-4 pt-4 text-gray-900"> عادة ما تستغرق 4 إلى 6 أسابيع من تاريخ تحميل الحاوية.
+        .</p>
+    </details>
+
+ 
+  </div>
+</section>
+
+
+<section class="py-16 bg-gray-50 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 rounded-xl shadow-md">
+
+  <!-- معلومات التواصل -->
+  <div class="flex flex-col justify-center border-r md:border-r-2 border-gray-200 pr-0 md:pr-10">
+    <ul class="space-y-4">
+      <li class="text-lg text-gray-700 flex items-center gap-2">
+        <i class="fas fa-phone"></i>
+        <span>: +1 (865) 443‑8923</span>
+      </li>
+      <li class="text-lg text-gray-700 flex items-center gap-2">
+        <i class="fas fa-envelope "></i>
+        <span>: contact@platinumglobalmotorsllc.com</span>
+      </li>
+      <li class="text-lg text-gray-700 flex items-center gap-2">
+        <i class="fas fa-location-dot"></i>
+        <span>: Knoxville, TN</span>
+      </li>
+    </ul>
+    <span class="block mt-8 ">
+      لعملائنا في ليبيا، يرجى التواصل عبر واتساب ليتم تحويلكم مباشرة إلى الفريق المختص.
+    </span>
+  </div>
+
+  <!-- الخريطة -->
+  <div class="w-full h-full">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103346.08512676918!2d-84.10161597368123!3d35.95760594569145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c17c3c6ab6fb5%3A0xadbc388650b530eb!2sKnoxville%20City%20Council!5e0!3m2!1sen!2seg!4v1754235297737!5m2!1sen!2seg"
+      class="w-full h-full rounded-lg"
+      style="min-height: 300px; border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- نموذج التواصل -->
+  <form action="#" class="space-y-4 text-right col-span-1 md:col-span-2">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <label for="name" class="block font-medium text-gray-700">
+          <i class="fas fa-user ml-1"></i> الاسم
+        </label>
+        <input type="text" id="name" placeholder="أدخل اسمك"
+          class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-[#836FFF] focus:border-[#836FFF] transition">
+      </div>
+
+      <div>
+        <label for="email" class="block font-medium text-gray-700">
+          <i class="fas fa-envelope ml-1"></i> البريد الإلكتروني
+        </label>
+        <input type="email" id="email" placeholder="example@email.com"
+          class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-[#836FFF] focus:border-[#836FFF] transition">
+      </div>
+
+      <div>
+        <label for="number" class="block font-medium text-gray-700">
+          <i class="fas fa-phone ml-1"></i> رقم الهاتف
+        </label>
+        <input type="text" id="number" placeholder="أدخل رقمك"
+          class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-[#836FFF] focus:border-[#836FFF] transition">
+      </div>
+    </div>
+
+    <div>
+      <label for="desc" class="block font-medium text-gray-700">
+        <i class="fas fa-align-left ml-1"></i> الرسالة
+      </label>
+      <textarea id="desc" rows="5" placeholder="الرسالة...."
+        class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-[#836FFF] focus:border-[#836FFF] transition"></textarea>
+    </div>
+
+    <button type="submit"
+      class="w-full bg-[#836FFF] text-white font-bold py-2 rounded-md hover:bg-[#6b5fcf] transition">
+      <i class="fas fa-paper-plane ml-2"></i> إرسال
+    </button>
+  </form>
+
+</section>
+
+
+<footer class="bg-[var(--color-card-bg)] text-[var(--color-text-muted)]">
+  <div class="max-w-screen-xl mx-auto px-6 py-12 sm:px-10 lg:px-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <!-- الشعار والوصف -->
+      <div>
+        <img src="/img/logo.png" alt="شعار الشركة" class="h-14 mb-4">
+        <p class="text-[var(--color-text-muted)] leading-relaxed">
+          <span class="text-[var(--color-primary)] font-bold">Platinum Global Motors</span><br>
+          امتداد عالمي من أمريكا إلى العالم، متخصصون في تصدير السيارات والمعدات من الولايات المتحدة.
+        </p>
+        <a href="#contact"
+          class="inline-block mt-4 px-4 py-2 border-2 border-[var(--color-accent)] text-[var(--color-accent)] rounded hover:bg-[var(--color-accent)] hover:text-white transition duration-300">
+          تواصل معنا
+        </a>
+      </div>
+
+      <!-- روابط الموقع -->
+      <div>
+        <h3 class="text-[var(--color-primary)] font-bold text-lg mb-4">روابط سريعة</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-[var(--color-accent)] transition">من نحن</a></li>
+          <li><a href="#services" class="hover:text-[var(--color-accent)] transition">خدماتنا</a></li>
+          <li><a href="#faq" class="hover:text-[var(--color-accent)] transition">الأسئلة الشائعة</a></li>
+          <li><a href="#contact" class="hover:text-[var(--color-accent)] transition">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <!-- وسائل الاتصال -->
+      <div>
+        <h3 class="text-[var(--color-primary)] font-bold text-lg mb-4">معلومات الاتصال</h3>
+        <ul class="space-y-3 text-sm">
+          <li><i class="fas fa-phone text-[var(--color-icon)] ml-2"></i> +1 (865) 443‑8923</li>
+          <li><i class="fas fa-envelope text-[var(--color-icon)] ml-2"></i> contact@platinumglobalmotorsllc.com</li>
+          <li><i class="fas fa-location-dot text-[var(--color-icon)] ml-2"></i> Knoxville, Tennessee, USA</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-[var(--color-primary)] font-bold text-lg mb-4">أين نعمل</h3>
+        
+        <p class="text-sm leading-relaxed mb-2">
+          <span class="font-semibold text-[var(--color-text-main)]">نُصدر إلى:</span><br>
+          ليبيا – تركيا – الإمارات – تونس – مصر – الأردن – ودول الخليج.
+        </p>
+        
+        <p class="text-sm leading-relaxed">
+          <span class="font-semibold text-[var(--color-text-main)]">موانئ الشحن المعتمدة:</span><br>
+          ميامي – نيويورك – هيوستن – شيكاغو – سافانا – كاليفورنيا.
+        </p>
+      </div>
+      
+    </div>
+
+    <!-- الخط السفلي -->
+    <div class="mt-10 border-t pt-6 border-[var(--color-border)] text-center text-xs text-gray-500 ">
+      <span  class="block"> &copy; 2025 Platinum Global Motors. جميع الحقوق محفوظة.</span>
+      <span>Platinum Global Motors – امتداد عالمي من أمريكا إلى العالم.</span>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="./js/js.js"></script>
+
+
+
+</body>
+</html>
